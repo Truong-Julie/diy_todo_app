@@ -1,8 +1,19 @@
+/* NAVIGATION BAR */
 .nav-bar-container {
   min-height: 15vh;
   border: 1px solid red;
 }
 
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav-link {
+  text-decoration: none;
+}
+
+/* HOME PAGE BIO CONTAINER */
 .bio-container {
   --bio-container-width: 33vw;
 }
@@ -40,11 +51,16 @@ i.fa {
   font-size: 40px;
 }
 
-.nav-links {
+/* HOME PAGE PROJECTS */
+.screenshots-container {
   display: flex;
-  justify-content: space-around;
+  max-width: 100vw;
+  flex-wrap: wrap;
+  border: 1px solid blue;
+  justify-content: center;
 }
 
-.nav-link {
-  text-decoration: none;
+.screenshots-container > img {
+  max-height: 35vh;
+  padding: 10px;
 }

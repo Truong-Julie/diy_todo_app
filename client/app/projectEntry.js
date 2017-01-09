@@ -9,9 +9,15 @@ const ProjectEntry = (props) => {
     <div className='project-entry'>
       <div className='project-name'>{name}</div>
       <LinkContainerEntry url={githubLink} fontAwesome={fontAwesome} />
-      { screenshots.map((screenshot, i) => 
-        <img src={`/assets/${screenshot.filePath}`} key={i} />
-      )}
+      <div className='screenshots-container'>
+        { screenshots.map((screenshot, i) => 
+          <img
+            className='screenshot'
+            src={`/assets/${screenshot.filePath}`} 
+            key={i} 
+          />
+        )}
+      </div>
     </div>
   )
 }
