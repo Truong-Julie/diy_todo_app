@@ -11,7 +11,10 @@ class Home extends React.Component {
         <NavBar />
         <div className='info-container'>
           <BioContainer bio={data.bioComponent} />
-          <Projects projects={data.projects} />
+          <Projects
+            projects={data.projects}
+            fontAwesome={data.fontAwesome.github}
+          />
         </div>
       </div>
     )

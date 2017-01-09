@@ -1,2 +1,11 @@
 // Node Modules
 node_modules
+
+// Personal Data
+data.js
+
+.DS_Store
+
+client/.DS_Store
+
+test/npm-debug.log

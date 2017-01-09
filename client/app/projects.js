@@ -13,11 +13,14 @@ class Projects extends React.Component {
     }
   }
   render () {
-    console.log('all projects', this.state.allProjects[0])
     return (
       <div className='projects-container'> 
         {this.state.allProjects.map((project, i) => 
-          <ProjectEntry project={project} key={i} />
+          <ProjectEntry
+            project={project}
+            fontAwesome={this.props.fontAwesome}
+            key={i} 
+          />
         )}
       </div>
     )

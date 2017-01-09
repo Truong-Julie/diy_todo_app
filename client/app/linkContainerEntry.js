@@ -1,7 +1,7 @@
 import React from 'react'
 
 const LinkContainerEntry = (props) => {
-  let {url, fontAwesome} = props.linkInfo
+  let {url, fontAwesome} = props
   return (
     <div className='link'>
       <a className='link-tag' href={url}>

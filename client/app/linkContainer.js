@@ -6,7 +6,11 @@ const LinkContainer = (props) => {
   return (
     <div className='link-container'>
       {links.map((link, i) =>
-        <LinkContainerEntry key={i} linkInfo={link} />
+        <LinkContainerEntry
+          url={link.url} 
+          fontAwesome={link.fontAwesome}
+          key={i} 
+        />
       )}
     </div>
   )
