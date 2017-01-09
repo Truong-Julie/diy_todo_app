@@ -1,20 +1,15 @@
 import React from 'react'
-import Landing from './landing'
-import Search from './search'
-import Layout from './layout'
-import { Router, Route, Link, IndexRoute, browserHistory, hashHistory } from 'react-router'
-import { store } from './store/store'
-import { Provider } from 'react-redux'
+import { Router, Route, Link, IndexRoute, hashHistory } from 'react-router'
+import Home from './home'
 
-const App = () => (
-  <Provider store={store}>
-    <Router history={hashHistory}>
-      <Route path='/' component={Layout}>
-        <IndexRoute component={Landing} />
-        <Route path='/search' component={Search} />
-      </Route>
-    </Router>
-  </Provider>
+const App = (props) => (
+  <Router history={hashHistory}>
+    <Route path='/' component={Home} >
+    </Route>
+  </Router>
 )
 
 export default App
+
+// <Route path='/home' component={Search} />
+// <IndexRoute component={Home} />

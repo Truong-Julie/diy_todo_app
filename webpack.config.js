@@ -6,7 +6,7 @@ module.exports = {
   entry: './client/app/main.js',
   output: {
     // Name of the file exported
-    path: path.join(__dirname, '/client'),
+    path: path.join(__dirname, '/bundle'),
     filename: 'index.js'
   },
   resolve: {

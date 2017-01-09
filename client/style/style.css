@@ -1,0 +1,50 @@
+.nav-bar-container {
+  min-height: 15vh;
+  border: 1px solid red;
+}
+
+.bio-container {
+  --bio-container-width: 33vw;
+}
+
+.bio-container {
+  display: flex;
+  max-width: var(--bio-container-width);
+  min-height: 85vh;
+  flex-direction: column;
+  align-items: center;
+  border: 1px solid red;
+}
+
+.bio-image {
+  min-width: auto;
+} 
+
+.img-circle {
+  border-radius: 120px;
+  box-shadow: 0px 0px 0px 5px lightgrey;
+}
+
+.link-container {
+  display: flex;
+  justify-content: center;
+  min-width: var(--bio-container-width);
+  border: 1px solid red;
+}
+
+.link {
+  margin: 10px;
+}
+
+i.fa {
+  font-size: 40px;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+}
+
+.nav-link {
+  text-decoration: none;
+}
