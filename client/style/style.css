@@ -98,3 +98,13 @@ i.fa {
   min-height: 25vh;
   border: 1px solid red;
 }
+
+/* PORTFOLIO */
+
+.portfolio-container {
+  border: 1px solid red;
+}
+
+.carousel-container {
+  border: 1px solid red;
+}

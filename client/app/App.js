@@ -11,8 +11,8 @@ class App extends React.Component {
   scrolling () {
     if (window.pageYOffset !== this.oldPageYOffset) {
       this.oldPageYOffset = window.pageYOffset
-      console.log('scrolling')
-      console.log('Window scrolling changed')
+      // console.log('scrolling')
+      // console.log('Window scrolling changed')
     }
   }
   render () {
