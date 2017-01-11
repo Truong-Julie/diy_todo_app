@@ -1,15 +1,35 @@
 import React from 'react'
-import { Router, Route, Link, IndexRoute, hashHistory } from 'react-router'
-import Home from './home'
+import Navbar from './navbar'
+import Footer from './footer'
 
-const App = (props) => (
-  <Router history={hashHistory}>
-    <Route path='/' component={Home} >
-    </Route>
-  </Router>
-)
+class App extends React.Component {
+  constructor (props) {
+    super(props)
+    this.oldPageYOffset = 0
+    this.scrolling = this.scrolling.bind(this)
+  }
+  scrolling () {
+    if (window.pageYOffset !== this.oldPageYOffset) {
+      this.oldPageYOffset = window.pageYOffset
+      console.log('scrolling')
+      console.log('Window scrolling changed')
+    }
+  }
+  render () {
+    return (
+      <div className='app-container'>
+        <Navbar />
+        {this.props.children}
+        <Footer />
+      </div>
+    )
+  }
+  componentDidMount () {
+    window.addEventListener('scroll', this.scrolling)
+  }
+  componentWillUnmount () {
+    window.removeEventListener('scroll', this.scrolling)
+  }
+}
 
 export default App
-
-// <Route path='/home' component={Search} />
-// <IndexRoute component={Home} />

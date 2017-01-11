@@ -4,7 +4,6 @@ import LinkContainerEntry from './linkContainerEntry'
 const ProjectEntry = (props) => {
   let {fontAwesome} = props
   let {name, githubLink, screenshots} = props.project
-  console.log(githubLink)
   return (
     <div className='project-entry'>
       <div className='project-name'>{name}</div>

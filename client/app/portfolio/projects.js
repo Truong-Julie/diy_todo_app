@@ -5,7 +5,6 @@ import ProjectCarousel from './projectCarousel'
 class Projects extends React.Component {
   constructor (props) {
     super(props)
-    // current project 
     let {projects} = this.props
     this.state = {
       currentProject: projects[0],
@@ -15,13 +14,7 @@ class Projects extends React.Component {
   render () {
     return (
       <div className='projects-container'> 
-        {this.state.allProjects.map((project, i) => 
-          <ProjectEntry
-            project={project}
-            fontAwesome={this.props.fontAwesome}
-            key={i} 
-          />
-        )}
+        
       </div>
     )
   }
@@ -29,3 +22,13 @@ class Projects extends React.Component {
 
 export default Projects
 
+
+/*
+{this.state.allProjects.map((project, i) => 
+  <ProjectEntry
+    project={project}
+    fontAwesome={this.props.fontAwesome}
+    key={i} 
+  />
+)}
+*/

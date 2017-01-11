@@ -1,16 +1,39 @@
 /* NAVIGATION BAR */
 .nav-bar-container {
-  min-height: 15vh;
+  min-height: 8vh;
+  min-width: 100vw;
   border: 1px solid red;
+  display: flex; 
+  justify-content: space-between;
 }
 
 .nav-links {
+  border: 3px solid purple;
   display: flex;
-  justify-content: space-around;
+  min-width: 50vw;
 }
 
 .nav-link {
+  border: 1px solid green;
+  display: flex;
+  flex-grow: 4;
+  justify-content: center;
+  align-items: center; 
   text-decoration: none;
+}
+
+.nav-link:hover {
+  border: 1px solid green;
+  text-decoration: none;
+  background-color: black;
+  transition: 0.5s;
+}
+
+/* FOOTER */
+
+.footer-container {
+  border: 1px solid red;
+  min-width: 100vw;
 }
 
 /* HOME PAGE BIO CONTAINER */
@@ -63,4 +86,15 @@ i.fa {
 .screenshots-container > img {
   max-height: 35vh;
   padding: 10px;
+}
+
+/* HOME TOP */
+.home-top-container {
+  min-height: 100vh;
+  border: 1px solid red;
+}
+
+.home-portfolio-container {
+  min-height: 25vh;
+  border: 1px solid red;
 }
