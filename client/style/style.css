@@ -109,14 +109,19 @@ i.fa {
 .carousel-container {
   border: 3px solid blue;
   display: flex;
-  flex-direction: row;
+  flex-direction: column;
   justify-content: space-between;
   align-content: center;
-  min-height: 85vh;
+  min-height: 75vh;
 }
 
-.carousel-container > img {
-  /*position: absolute;*/
+.carousel-screenshots {
+  display: flex;
+  overflow: hidden;
+  flex-direction: row;
+}
+
+.carousel-screenshots img {
   max-height: 65vh;
 }
 
@@ -145,6 +150,22 @@ i.fa {
   right: 100px;
   z-index: 1;
   /*margin-bottom: auto;*/
+}
+
+.carousel-description-container {
+  border: 1px solid green;
+  display: flex;
+  min-height: 25vh;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+
+.project-name {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 
 .carousel-circle-container {
