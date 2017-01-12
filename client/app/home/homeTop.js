@@ -4,7 +4,7 @@ const HomeTop = () => {
   return (
     <section className='home-top-container'>
       <p>A Software Engineer</p>
-      <p>The cook</p> 
+      <p>The chef</p> 
       <p>The builder</p>
     </section>
   )

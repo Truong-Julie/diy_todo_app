@@ -13,20 +13,33 @@ class ProjectCarousel extends React.Component {
       screenshots: this.props.project.screenshots,
       techStack: this.props.project.techStack
     }
+
+    this.onRightArrowClick = this.onRightArrowClick.bind(this)
+    this.onLeftArrowClick = this.onLeftArrowClick.bind(this)
+
     this.circleStyle = {
       'backgroundColor': 'black',
       'minWidth': '30px',
       'minHeight': '30px',
       'borderRadius': '100px'
     }
+
     this.imageStyle = {
       'transition': 'all 2s',
       'transform': `translateX(100px)`
     }
-    this.onRightArrowClick = this.onRightArrowClick.bind(this)
-    this.onLeftArrowClick = this.onLeftArrowClick.bind(this)
   }
-  onRightArrowClick () {
+
+  componentDidMount () {
+    console.log(window.innerWidth)
+  }
+
+  photoLeftPosition () {
+    return
+  }
+
+  onRightArrowClick (e) {
+    console.log(e.target)
     if (this.state.currentPhotoIndex < this.state.screenshots.length - 1) {
       this.setState({
         currentPhotoIndex: this.state.currentPhotoIndex + 1
@@ -36,9 +49,9 @@ class ProjectCarousel extends React.Component {
         currentPhotoIndex: 0
       })
     }
-    console.log('right arrow click')
   }
-  onLeftArrowClick () {
+  onLeftArrowClick (e) {
+    console.log('test', e.target.getBoundingClientRect())
     if (this.state.currentPhotoIndex > 1) {
       this.setState({
         currentPhotoIndex: this.state.currentPhotoIndex - 1
@@ -48,7 +61,6 @@ class ProjectCarousel extends React.Component {
         currentPhotoIndex: this.state.screenshots.length - 1
       })
     }
-    console.log('left arrow click')
   }
   render () {
     return (
