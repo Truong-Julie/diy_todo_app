@@ -1,9 +1,9 @@
 import React from 'react'
 import {Link} from 'react-router'
 
-const NavBar = () => {
+const NavBar = (props) => {
   return (
-    <div className='nav-bar-container'>
+    <div className='nav-bar-container' style={{minHeight: `${props.height}vh`}}>
       <Link className='nav-link' to='/'><p>LOGO!!!</p></Link>
       <div className='nav-links'>
         <Link className='nav-link' to='/portfolio'>Portfolio</Link>

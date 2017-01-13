@@ -1,10 +1,19 @@
+body {
+  margin: 0;
+}
+
 /* NAVIGATION BAR */
 .nav-bar-container {
-  min-height: 8vh;
+  /*min-height: 25vh;*/
   min-width: 100vw;
   border: 1px solid red;
   display: flex; 
   justify-content: space-between;
+  transition: all 1s;
+}
+
+.nav-bar-container.active {
+  /*min-width: 8vh;*/
 }
 
 .nav-links {
@@ -90,17 +99,72 @@ i.fa {
 
 /* HOME TOP */
 .home-top-container {
-  min-height: 100vh;
+  min-height: 75vh;
   border: 1px solid red;
 }
 
 .home-portfolio-container {
   min-height: 25vh;
   border: 1px solid red;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.home-portfolio-container .project {
+  margin: 5px;
+}
+
+/*.home-portfolio-container > div:hover {
+  transform: scale(1.2);
+  opacity: 0;
+}*/
+
+
+.project {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  width: 35vw;
+  height: 35vh;
+}
+
+.project-image img {
+  width: 100%
+}
+
+.project .project-name {
+  color: red;
+  font-size: 20px;
+  position: absolute;
+  margin: auto;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+.project-overlay {
+  position: absolute;
+  height: inherit;
+  width: inherit;
+  opacity: 0;
+  transition: all 1s ease;
+  background-color: #008CBA;
+  background-image: url('../assets/musica-searcher.png');
+  background-repeat: no-repeat;
+  background-size: 25% auto;
+  background-position: center;
+}
+
+
+
+.project:hover .project-overlay {
+  opacity: 1;
 }
 
 /* PORTFOLIO */
-
 .portfolio-container {
   border: 1px solid red;
 }
@@ -169,7 +233,6 @@ i.fa {
 }
 
 .carousel-circle-container {
-  position: absolute;
   display: flex;
   flex-direction: row;
   bottom: 10vh;
