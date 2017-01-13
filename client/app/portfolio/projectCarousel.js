@@ -1,4 +1,7 @@
 import React from 'react'
+import TransitionGroup from 'react-addons-transition-group'
+import CarouselEntry from './carouselEntry'
+import ReactDom from 'react-dom'
 
 // Carousel for each indivdual project
 
@@ -39,7 +42,14 @@ class ProjectCarousel extends React.Component {
   }
 
   onRightArrowClick (e) {
-    console.log(e.target)
+    let prevImg = ReactDom.findDOMNode(this.refs.collection)
+    // console.log(prevImg.__proto__, 'FINDDOMNODE')
+    // prevImg.childNodes[1].style.setProperty('transform', 'translate(12px, 50%)')
+    // transition: 'all 1s'
+    // prevImg.childNodes[0].style.setProperty('transform', 'scale(.5)')
+    Object.assign(prevImg.childNodes[0].style, {transform: 'translate(-100%)', transition: 'all 1s'})
+    // prevImg.childNodes[0].style({transform: 'scale(.5)'})
+    console.log(prevImg.childNodes[0].style, 'FINDDOMNODE')
     if (this.state.currentPhotoIndex < this.state.screenshots.length - 1) {
       this.setState({
         currentPhotoIndex: this.state.currentPhotoIndex + 1
@@ -66,11 +76,8 @@ class ProjectCarousel extends React.Component {
     return (
       <div className='carousel-container'>
         <div className='arrow left-arrow' onClick={this.onLeftArrowClick}>{`<`}</div>
-
-        <div className='carousel-screenshots' style={{...this.imageStyle}}>
-          {this.state.screenshots.map((img, i) => 
-            <img src={`/assets/${this.state.screenshots[i].filePath}`} key={i} />
-          )}
+        <div className='carousel-screenshots' ref='collection'>
+          <div><img src={`/assets/${this.state.screenshots[0].filePath}`} style={{display: 'block', transition: 'all 1s'}} /></div>
         </div>
 
         <div className='carousel-circle-container'>
@@ -101,5 +108,19 @@ class ProjectCarousel extends React.Component {
 
 export default ProjectCarousel
 
+// {this.state.screenshots.map((item, i) => {
+//   return this.state.currentPhotoIndex === 0 ? <div><img key={i} src={`/assets/${this.state.screenshots[i].filePath}`} style={{display: 'block', transition: 'all 1s'}} /></div> : <img key={i} src={`/assets/${this.state.screenshots[i].filePath}`} style={{display: 'none', transition: 'all 1s'}} />
+//   })
+// }
+// .style({
+//       transform: 'translate(-100%)'
+//     })
 // Single photo
-//           <img src={`/assets/${this.state.screenshots[this.state.currentPhotoIndex].filePath}`} />
+// <img src={`/assets/${this.state.screenshots[this.state.currentPhotoIndex].filePath}`} />
+//  
+
+// <div className='carousel-screenshots' style={{...this.imageStyle}}>
+//   {this.state.screenshots.map((img, i) => 
+//     <img src={`/assets/${this.state.screenshots[i].filePath}`} key={i} />
+//   )}
+// </div>

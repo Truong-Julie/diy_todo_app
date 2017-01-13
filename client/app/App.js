@@ -14,7 +14,7 @@ class App extends React.Component {
     if (window.pageYOffset !== this.oldPageYOffset) {
       // console.log(window.pageYOffset, 'off set')
       this.setState({
-        navBarHeight: 8
+        navBarHeight: 15
       })
     } else {
       this.setState({

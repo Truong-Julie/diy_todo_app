@@ -3,6 +3,7 @@ import React from 'react'
 const HomePortfolio = (props) => {
   return (
     <div className='home-portfolio-container'>
+    <div>Projects</div>
       {props.projects.map((project, i) => (
         <div className='project' key={i}>
           <div className='project-name'>{project.name}</div>
