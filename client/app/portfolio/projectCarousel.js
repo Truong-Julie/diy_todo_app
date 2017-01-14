@@ -20,8 +20,8 @@ class ProjectCarousel extends React.Component {
 
     this.circleStyle = {
       'backgroundColor': 'black',
-      'minWidth': '30px',
-      'minHeight': '30px',
+      'minWidth': '10px',
+      'minHeight': '10px',
       'borderRadius': '100px'
     }
 
@@ -42,36 +42,41 @@ class ProjectCarousel extends React.Component {
 
   onRightArrowClick (e) {
     // sets the previous index to translate to 100%
-    let prevImg = ReactDom.findDOMNode(this.refs.screenshots)
-    // console.log(prevImg.__proto__, 'FINDDOMNODE')
-    // prevImg.childNodes[1].style.setProperty('transform', 'translate(12px, 50%)')
-    // transition: 'all 1s'
-    // prevImg.childNodes[0].style.setProperty('transform', 'scale(.5)')
-    Object.assign(prevImg.childNodes[this.state.currentPhotoIndex].style, {transform: 'translate(-100%)', transition: 'all 1s'})
+
     if (this.state.currentPhotoIndex < this.state.screenshots.length - 1) {
       this.setState({
         currentPhotoIndex: this.state.currentPhotoIndex + 1
       })
+      // Object.assign(prevImg.childNodes[this.state.currentPhotoIndex].style, {transform: 'translate(0%)', transition: 'all 1s'})
     } else {
       this.setState({
         currentPhotoIndex: 0
       })
+      // Object.assign(prevImg.childNodes[this.state.currentPhotoIndex].style, {transform: 'translate(0%)', transition: 'all 1s'})
     }
-    Object.assign(prevImg.childNodes[this.state.currentPhotoIndex].style, {transform: 'translate(-100%)', transition: 'all 1s'})
   }
   onLeftArrowClick (e) {
     // sets current photo to -100% 
     // set state to update currentIndex to next index
     // set next photo to translate 0 
 
-    if (this.state.currentPhotoIndex > 1) {
+    let prevImg = ReactDom.findDOMNode(this.refs.screenshots)
+    console.log((this.state.currentPhotoIndex + 1) * 100)
+    prevImg.childNodes.forEach(node => {
+      Object.assign(node.style, {transform: `translate(-${(this.state.currentPhotoIndex + 1) * 100}%)`, transition: `all 1s`})
+    })
+    // Object.assign(prevImg.childNodes[this.state.currentPhotoIndex].style, {transform: `translate(-${(this.state.currentPhotoIndex + 1) * 100}%)`, transition: `all 1s`})
+    // Object.assign(prevImg.childNodes[this.state.currentPhotoIndex + 1].style, {transform: `translate(-${(this.state.currentPhotoIndex + 1) * 100}%)`, transition: `all 1s`})
+    if (this.state.currentPhotoIndex < this.state.screenshots.length) {
       this.setState({
-        currentPhotoIndex: this.state.currentPhotoIndex - 1
+        currentPhotoIndex: this.state.currentPhotoIndex + 1
       })
+      Object.assign(prevImg.childNodes[this.state.currentPhotoIndex].style, {transform: `translate(-${(this.state.currentPhotoIndex + 1) * 100}%)`, transition: `all 1s`})
     } else {
       this.setState({
-        currentPhotoIndex: this.state.screenshots.length - 1
+        currentPhotoIndex: 0
       })
+      Object.assign(prevImg.childNodes[this.state.currentPhotoIndex].style, {transform: `translate(-${(this.state.currentPhotoIndex + 1) * 100}%)`, transition: `all 1s`})
     }
   }
   render () {
@@ -87,7 +92,7 @@ class ProjectCarousel extends React.Component {
           )}
         </div>
         <div className='arrow right-arrow' onClick={this.onRightArrowClick}>{`>`}</div>
-        <div className='carousel-circle-container'>
+        <div className='carousel-circle-container' ref='dots'>
           {this.state.screenshots.map((item, i) => {
             return this.state.currentPhotoIndex === i ? <div className='circle' style={{...this.circleStyle, backgroundColor: 'lightgrey'}} key={i} /> : <div className='circle' style={{...this.circleStyle}} key={i} /> 
           })}
@@ -110,6 +115,8 @@ class ProjectCarousel extends React.Component {
 }
 
 export default ProjectCarousel
+
+
 
 // {this.state.screenshots.map((item, i) => {
 //   return this.state.currentPhotoIndex === i ? <div className='circle' style={{...this.circleStyle, backgroundColor: 'lightgrey'}} key={i} /> : <div className='circle' style={{...this.circleStyle}} key={i} />
