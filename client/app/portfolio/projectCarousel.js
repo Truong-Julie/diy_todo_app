@@ -1,6 +1,4 @@
 import React from 'react'
-import TransitionGroup from 'react-addons-transition-group'
-import CarouselEntry from './carouselEntry'
 import ReactDom from 'react-dom'
 
 // Carousel for each indivdual project
@@ -34,7 +32,8 @@ class ProjectCarousel extends React.Component {
   }
 
   componentDidMount () {
-    console.log(window.innerWidth)
+    let screenshotNodes = ReactDom.findDOMNode(this.refs.screenshots)
+    // Object.assign(screenshotNodes.childNodes[0].style, {alignSelf: 'center'})
   }
 
   photoLeftPosition () {
@@ -42,14 +41,13 @@ class ProjectCarousel extends React.Component {
   }
 
   onRightArrowClick (e) {
-    let prevImg = ReactDom.findDOMNode(this.refs.collection)
+    // sets the previous index to translate to 100%
+    let prevImg = ReactDom.findDOMNode(this.refs.screenshots)
     // console.log(prevImg.__proto__, 'FINDDOMNODE')
     // prevImg.childNodes[1].style.setProperty('transform', 'translate(12px, 50%)')
     // transition: 'all 1s'
     // prevImg.childNodes[0].style.setProperty('transform', 'scale(.5)')
-    Object.assign(prevImg.childNodes[0].style, {transform: 'translate(-100%)', transition: 'all 1s'})
-    // prevImg.childNodes[0].style({transform: 'scale(.5)'})
-    console.log(prevImg.childNodes[0].style, 'FINDDOMNODE')
+    Object.assign(prevImg.childNodes[this.state.currentPhotoIndex].style, {transform: 'translate(-100%)', transition: 'all 1s'})
     if (this.state.currentPhotoIndex < this.state.screenshots.length - 1) {
       this.setState({
         currentPhotoIndex: this.state.currentPhotoIndex + 1
@@ -59,9 +57,13 @@ class ProjectCarousel extends React.Component {
         currentPhotoIndex: 0
       })
     }
+    Object.assign(prevImg.childNodes[this.state.currentPhotoIndex].style, {transform: 'translate(-100%)', transition: 'all 1s'})
   }
   onLeftArrowClick (e) {
-    console.log('test', e.target.getBoundingClientRect())
+    // sets current photo to -100% 
+    // set state to update currentIndex to next index
+    // set next photo to translate 0 
+
     if (this.state.currentPhotoIndex > 1) {
       this.setState({
         currentPhotoIndex: this.state.currentPhotoIndex - 1
@@ -76,19 +78,20 @@ class ProjectCarousel extends React.Component {
     return (
       <div className='carousel-container'>
         <div className='arrow left-arrow' onClick={this.onLeftArrowClick}>{`<`}</div>
-        <div className='carousel-screenshots' ref='collection'>
-          <div><img src={`/assets/${this.state.screenshots[0].filePath}`} style={{display: 'block', transition: 'all 1s'}} /></div>
-        </div>
 
+        <div className='carousel-screenshots' ref='screenshots'>
+          {this.state.screenshots.map((img, i) => 
+            <div className='screenshot'>
+              <img src={`/assets/${this.state.screenshots[i].filePath}`} />
+            </div>
+          )}
+        </div>
+        <div className='arrow right-arrow' onClick={this.onRightArrowClick}>{`>`}</div>
         <div className='carousel-circle-container'>
           {this.state.screenshots.map((item, i) => {
-            return this.state.currentPhotoIndex === i ? <div className='circle' style={{...this.circleStyle, backgroundColor: 'lightgrey'}} key={i} /> : <div className='circle' style={{...this.circleStyle}} key={i} />
-            })
-          }
+            return this.state.currentPhotoIndex === i ? <div className='circle' style={{...this.circleStyle, backgroundColor: 'lightgrey'}} key={i} /> : <div className='circle' style={{...this.circleStyle}} key={i} /> 
+          })}
         </div>
-
-        <div className='arrow right-arrow' onClick={this.onRightArrowClick}>{`>`}</div>
-
         <div className='carousel-description-container'>
           <div className='project-name'>
             {this.state.projectName}
@@ -107,6 +110,11 @@ class ProjectCarousel extends React.Component {
 }
 
 export default ProjectCarousel
+
+// {this.state.screenshots.map((item, i) => {
+//   return this.state.currentPhotoIndex === i ? <div className='circle' style={{...this.circleStyle, backgroundColor: 'lightgrey'}} key={i} /> : <div className='circle' style={{...this.circleStyle}} key={i} />
+//   })
+// }
 
 // {this.state.screenshots.map((item, i) => {
 //   return this.state.currentPhotoIndex === 0 ? <div><img key={i} src={`/assets/${this.state.screenshots[i].filePath}`} style={{display: 'block', transition: 'all 1s'}} /></div> : <img key={i} src={`/assets/${this.state.screenshots[i].filePath}`} style={{display: 'none', transition: 'all 1s'}} />
