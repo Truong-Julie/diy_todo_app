@@ -1,25 +1,34 @@
 import React from 'react'
-import LinkContainerEntry from './linkContainerEntry'
 
 const ProjectEntry = (props) => {
-  let {fontAwesome} = props
-  let {name, githubLink, screenshots} = props.project
   return (
     <div className='project-entry'>
-      <div className='project-name'>{name}</div>
-      <LinkContainerEntry url={githubLink} fontAwesome={fontAwesome} />
-      <div className='screenshots-container'>
-        { screenshots.map((screenshot, i) => 
-          <img
-            className='screenshot'
-            src={`/assets/${screenshot.filePath}`} 
-            key={i} 
-          />
-        )}
+      <img src={`../assets/${props.image}`} className='project-image' alt={props.alt} />
+      <div className='project-info'>
+        <div className='project-name'>
+          <h3>{props.name}</h3>
+          <a className='github-link'href={props.githubLink}>
+            <i className={props.fontAwesome} aria-hidden='true' />
+          </a>
+        </div>
+        <div className='project-summary'>
+          <p className='project-description'>{props.description}</p>
+          <p className='project-stack'>{props.techStack}</p>
+        </div>
       </div>
     </div>
   )
 }
 
 export default ProjectEntry
+
+ProjectEntry.propTypes = {
+  image: React.PropTypes.string,
+  alt: React.PropTypes.string,
+  name: React.PropTypes.string,
+  githubLink: React.PropTypes.string,
+  description: React.PropTypes.string,
+  techStack: React.PropTypes.string,
+  fontAwesome: React.PropTypes.string
+}
 

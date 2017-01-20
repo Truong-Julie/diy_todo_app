@@ -3,15 +3,17 @@ import {Link} from 'react-router'
 
 const NavBar = (props) => {
   return (
-    <div className='nav-bar-container' style={{minHeight: `${props.height}vh`}}>
-      <Link className='nav-link' to='/'><p>LOGO!!!</p></Link>
+    <nav className='nav-bar-container' >
+      <Link className='logo' to='/'>
+        <img src={`../assets/Logo.png`} alt='Julie Truong' />
+      </Link>
       <div className='nav-links'>
+        <Link className='nav-link' to='/aboutMe'>About Me</Link>
         <Link className='nav-link' to='/portfolio'>Portfolio</Link>
-        <Link className='nav-link' to='/'>About Me</Link>
-        <Link className='nav-link' to='/'>Resume</Link>
-        <Link className='nav-link' to='/'>Contact Me</Link>
+        <a className='nav-link' href='../assets/JulieTruongResume.pdf'>Resume</a>
+        <Link className='nav-link' to='/contactMe'>Contact Me</Link>
       </div>
-    </div>
+    </nav>
   )
 }
 

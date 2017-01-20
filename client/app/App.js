@@ -2,41 +2,39 @@ import React from 'react'
 import Navbar from './navbar'
 import Footer from './footer'
 
+const fontAwesome = {
+  github: 'fa fa-github',
+  linkedIn: 'fa fa-linkedin-square',
+  angelList: 'fa fa-angellist'
+}
+
+const personalLinks = {
+  links: [
+    {tag: 'github',
+      url: 'https://github.com/Truong-Julie',
+      fontAwesome: fontAwesome.github},
+    {tag: 'linkedIn',
+      url: 'https://www.linkedin.com/in/truong-julie',
+      fontAwesome: fontAwesome.linkedIn},
+    {tag: 'angelList',
+      url: 'https://angel.co/truong-julie',
+      fontAwesome: fontAwesome.angelList
+    }
+  ]
+}
+
 class App extends React.Component {
   constructor (props) {
     super(props) 
-    this.state = {
-      navBarHeight: 15
-    }
-    this.scrolling = this.scrolling.bind(this)
-  }
-  scrolling () {
-    if (window.pageYOffset !== this.oldPageYOffset) {
-      // console.log(window.pageYOffset, 'off set')
-      this.setState({
-        navBarHeight: 15
-      })
-    } else {
-      this.setState({
-        navBarHeight: 15
-      })
-    }
   }
   render () {
     return (
       <div className='app-container'>
-        <Navbar height={this.state.navBarHeight} />
+        <Navbar />
         {this.props.children}
-        <Footer />
+        <Footer contacts={personalLinks.links} />
       </div>
     )
-  }
-  componentDidMount () {
-    this.oldPageYOffset = window.pageYOffset
-    window.addEventListener('scroll', this.scrolling)
-  }
-  componentWillUnmount () {
-    window.removeEventListener('scroll', this.scrolling)
   }
 }
 

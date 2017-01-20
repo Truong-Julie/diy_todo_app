@@ -1,15 +1,23 @@
 import React from 'react'
 
-const Footer = () => {
+const Footer = (props) => {
   return (
     <div className='footer-container'>
-      julie.truong.lieu@gmail.com
-      &copy; 2017 Julie Truong
+      {props.contacts.map((contact, i) => (
+        <a className='footer-link' href={contact.url} key={i} >
+          <i className={contact.fontAwesome} aria-hidden='true' />
+        </a>  
+      ))}
     </div>
   )
 }
 
 export default Footer
+
+Footer.propTypes = {
+  url: React.PropTypes.string,
+  fontAwesome: React.PropTypes.string
+}
 
 // contact me => mailto
 // links to github, angelslist and linkedin
