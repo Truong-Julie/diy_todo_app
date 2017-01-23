@@ -81,9 +81,11 @@ const Portfolio = (props) => {
   return (
     <div className='portfolio'> 
       <Banner {...dummyBanner} />
-      {projects.map((project, i) => (
-        <ProjectEntry key={i} {...project} />
-      ))}
+      <div className='projects'>
+        {projects.map((project, i) => (
+          <ProjectEntry key={i} {...project} />
+        ))}
+      </div>
     </div>
   )
 }

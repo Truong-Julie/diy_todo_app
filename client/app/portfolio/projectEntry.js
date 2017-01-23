@@ -3,7 +3,9 @@ import React from 'react'
 const ProjectEntry = (props) => {
   return (
     <div className='project-entry'>
-      <img src={`../assets/${props.image}`} className='project-image' alt={props.alt} />
+      <div className='project-image'>
+        <img src={`../assets/${props.image}`} alt={props.alt} />
+      </div>
       <div className='project-info'>
         <div className='project-name'>
           <h3>{props.name}</h3>

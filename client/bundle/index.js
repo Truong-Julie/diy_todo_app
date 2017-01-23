@@ -27966,9 +27966,13 @@
 	    'div',
 	    { className: 'portfolio' },
 	    _react2.default.createElement(_banner2.default, dummyBanner),
-	    projects.map(function (project, i) {
-	      return _react2.default.createElement(_projectEntry2.default, _extends({ key: i }, project));
-	    })
+	    _react2.default.createElement(
+	      'div',
+	      { className: 'projects' },
+	      projects.map(function (project, i) {
+	        return _react2.default.createElement(_projectEntry2.default, _extends({ key: i }, project));
+	      })
+	    )
 	  );
 	};
 
@@ -27994,7 +27998,11 @@
 	  return _react2.default.createElement(
 	    'div',
 	    { className: 'project-entry' },
-	    _react2.default.createElement('img', { src: '../assets/' + props.image, className: 'project-image', alt: props.alt }),
+	    _react2.default.createElement(
+	      'div',
+	      { className: 'project-image' },
+	      _react2.default.createElement('img', { src: '../assets/' + props.image, alt: props.alt })
+	    ),
 	    _react2.default.createElement(
 	      'div',
 	      { className: 'project-info' },
