@@ -1,4 +1,4 @@
-const path = require('path');
+const path = require('path')
 
 module.exports = {
   // Entry point
@@ -6,7 +6,7 @@ module.exports = {
   entry: './client/app/index.js',
   output: {
     // Name of the file exported
-    path: path.join(__dirname, '/bundle'),
+    path: path.join(__dirname, '/client/bundle'),
     filename: 'index.js'
   },
   resolve: {
