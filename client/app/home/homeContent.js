@@ -7,7 +7,7 @@ let albumArt = data.dummyData.image
 let altString = 'alt string'
 
 let aboutMe = { title: 'About Me',
-  image: data.dummyData.image,
+  image: '../assets/crabbing.jpg',
   alt: 'alt string',
   summary: 'A bay area native, who cooks, draws and builds...',
   link: 'aboutMe',
@@ -15,7 +15,7 @@ let aboutMe = { title: 'About Me',
 }
 
 let portfolio = { title: 'Portfolio',
-  image: data.dummyData.image,
+  image: '../assets/lensity_square_2.png',
   alt: 'alt string',
   summary: 'Creatively buliding blocks...',
   link: 'portfolio',

@@ -27604,7 +27604,7 @@
 	var altString = 'alt string';
 
 	var aboutMe = { title: 'About Me',
-	  image: _data2.default.dummyData.image,
+	  image: '../assets/crabbing.jpg',
 	  alt: 'alt string',
 	  summary: 'A bay area native, who cooks, draws and builds...',
 	  link: 'aboutMe',
@@ -27612,7 +27612,7 @@
 	};
 
 	var portfolio = { title: 'Portfolio',
-	  image: _data2.default.dummyData.image,
+	  image: '../assets/lensity_square_2.png',
 	  alt: 'alt string',
 	  summary: 'Creatively buliding blocks...',
 	  link: 'portfolio',
@@ -27779,11 +27779,15 @@
 	    'div',
 	    { className: 'home-content-entry' },
 	    _react2.default.createElement(
-	      'h3',
+	      'h2',
 	      null,
 	      props.title
 	    ),
-	    _react2.default.createElement('img', { src: props.image, alt: props.alt }),
+	    _react2.default.createElement(
+	      'div',
+	      { className: 'home-content-image' },
+	      _react2.default.createElement('img', { src: props.image, alt: props.alt })
+	    ),
 	    _react2.default.createElement(
 	      'p',
 	      { className: 'summary' },
