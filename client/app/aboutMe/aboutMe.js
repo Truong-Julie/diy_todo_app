@@ -10,7 +10,7 @@ let dummyBanner = {
 }
 
 let summary = {
-  summary: 'Im a bay area native. \n Started my career as an revenue operations specialist at Yelp. During my time there I noticed there were several manual processes and I thought to myself, couldn\'t this be automated? \n I\'ve always been curious about building software which make people\'s lives easier.'
+  summary: ['I\'m a bay area native and have always lived in the bay. \nI Started my career as an revenue operations specialist at Yelp. During my time there I noticed there were several manual processes and I thought to myself, couldn\'t this be automated?', '\t After developing my first Python scripts, I automated a full day\'s working into only a few short hours. This experience made me feel so empowered, I knew I needed to keep building.', '\t Most recently, I created a photo sharing application, where I architected the Node.js and Express RESTful API on a PostgreSQL database. I also developed a Dockerized and scalable microservice which captured the Clarify API to scrape data user photos uploads and to store them on an AWS S3 file server. In addition, I am also a strong team player assisting our front-end engineer with code reviews and debugging.', '\t My passion is contributing to a code base, across spanning all layers of the stack. I feel the most accomplishment when I can move seamlessly between multiple parts of the stack and contribute clean and modular code. I recently']
 }
 
 const AboutMe = (props) => (
