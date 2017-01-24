@@ -27620,7 +27620,7 @@
 	};
 
 	var contactMe = { title: 'Contact Me',
-	  image: _data2.default.dummyData.image,
+	  image: '../assets/contact_me.jpg',
 	  alt: 'alt string',
 	  summary: 'Interested in contacting me...',
 	  link: 'contactMe',
@@ -27786,7 +27786,11 @@
 	    _react2.default.createElement(
 	      'div',
 	      { className: 'home-content-image' },
-	      _react2.default.createElement('img', { src: props.image, alt: props.alt })
+	      _react2.default.createElement(
+	        _reactRouter.Link,
+	        { to: '/' + props.link },
+	        _react2.default.createElement('img', { src: props.image, alt: props.alt })
+	      )
 	    ),
 	    _react2.default.createElement(
 	      'p',
@@ -27794,11 +27798,11 @@
 	      props.summary
 	    ),
 	    _react2.default.createElement(
-	      _reactRouter.Link,
-	      { to: '/' + props.link },
+	      'div',
+	      { className: 'btn' },
 	      _react2.default.createElement(
-	        'div',
-	        { className: 'btn' },
+	        _reactRouter.Link,
+	        { to: '/' + props.link },
 	        props.button
 	      )
 	    )

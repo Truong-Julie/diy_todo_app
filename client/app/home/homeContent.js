@@ -23,7 +23,7 @@ let portfolio = { title: 'Portfolio',
 }
 
 let contactMe = { title: 'Contact Me',
-  image: data.dummyData.image,
+  image: '../assets/contact_me.jpg',
   alt: 'alt string',
   summary: 'Interested in contacting me...',
   link: 'contactMe',

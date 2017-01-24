@@ -5,12 +5,14 @@ const HomeContentEntry = (props) => (
   <div className='home-content-entry'>
     <h2>{props.title}</h2>
     <div className='home-content-image'>
-      <img src={props.image} alt={props.alt} />
+      <Link to={`/${props.link}`}>
+        <img src={props.image} alt={props.alt} />
+      </Link>
     </div>
     <p className='summary'>{props.summary}</p>
-    <Link to={`/${props.link}`} >
-      <div className='btn'>{props.button}</div>
-    </Link>
+    <div className='btn'>
+      <Link to={`/${props.link}`}>{props.button}</Link>
+    </div>
   </div>
 )
 
