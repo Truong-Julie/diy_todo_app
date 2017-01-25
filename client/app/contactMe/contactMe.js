@@ -5,7 +5,7 @@ import ContactMeContent from './contactMeContent'
 let dummyBanner = {
   image: 'water_hike_3.JPG',
   header: 'Contact Me',
-  tagline: 'If you need to ring me',
+  tagline: '',
   alt: 'Zion National Park'
 }
 

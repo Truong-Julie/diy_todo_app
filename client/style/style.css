@@ -51,7 +51,9 @@ body {
   min-width: 101vw;
   min-height: 15vh;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
   margin: 5px;
   padding-top: 3vh;
   background-color: lightgrey;
@@ -60,6 +62,10 @@ body {
 .footer-link {
   color: black;
   margin: 0px 10px;
+}
+
+.footer-container .copyright {
+  font-size: .75em;
 }
 
 .banner-container {
@@ -183,10 +189,10 @@ i.fa {
   display: flex;
   align-items: center;
   flex-direction: column;
-  border: 1px solid grey;
   padding: 20px;
   width: 75vw;
   margin-bottom: 10vh;
+  box-shadow: 2px 2px 2px 2px rgba(0, 0, 0, 0.2);
 }
 
 .project-image {
@@ -205,6 +211,7 @@ i.fa {
   align-items: center;
   padding: 10px;
   width: inherit;
+  min-height: 85px;
 }
 
 .project-name {
@@ -227,6 +234,7 @@ i.fa {
   justify-content: space-between;
   padding-left: 25px;
   width: 65vw;
+
 }
 
 .project-summary p {
@@ -237,9 +245,23 @@ i.fa {
   margin: 0 0 4px;
 }
 
+.project-description {
+}
+
+.project-stack {
+  font-size: .9em;
+  font-style: italic;
+  color: grey;
+}
+
+.github-link i {
+  color: black;
+}
+
 .about-me-content-container {
-  padding: 0 10vw;
-  height: 60vh;
+  text-align: center;
+  padding: 0 10vw 10vh;
+  min-height: 60vh;
 }
 
 .about-me-image img {
@@ -255,3 +277,8 @@ i.fa {
   word-wrap: break-word;
 }
 
+.contact-me-content-container {
+  display:flex;
+  justify-content: center;
+  align-items: center;
+}

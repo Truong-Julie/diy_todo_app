@@ -27504,13 +27504,22 @@
 	  return _react2.default.createElement(
 	    'div',
 	    { className: 'footer-container' },
-	    props.contacts.map(function (contact, i) {
-	      return _react2.default.createElement(
-	        'a',
-	        { className: 'footer-link', href: contact.url, key: i },
-	        _react2.default.createElement('i', { className: contact.fontAwesome, 'aria-hidden': 'true' })
-	      );
-	    })
+	    _react2.default.createElement(
+	      'div',
+	      { className: 'icons' },
+	      props.contacts.map(function (contact, i) {
+	        return _react2.default.createElement(
+	          'a',
+	          { className: 'footer-link', href: contact.url, key: i },
+	          _react2.default.createElement('i', { className: contact.fontAwesome, 'aria-hidden': 'true' })
+	        );
+	      })
+	    ),
+	    _react2.default.createElement(
+	      'div',
+	      { className: 'copyright' },
+	      '\xA9 Julie Truong 2017'
+	    )
 	  );
 	};
 
@@ -27929,41 +27938,41 @@
 	// }
 
 	var projects = [{
-	  image: 'bookmarkMyFood_createAccount_Resized.png',
+	  image: 'lensity_home_page_resized.png',
+	  alt: 'screenshot',
+	  name: 'Lensity',
+	  githubLink: 'https://github.com/preposterous-kumquat',
+	  description: 'Photo sharing app utilizing machine learning',
+	  techStack: '*React, React-Router, Redux, Webpack, Node, Express, Sequelize, PostgreSQL, Redis, Python, Docker, AWS-S3, AWS-EC2',
+	  fontAwesome: 'fa fa-github'
+	}, {
+	  image: 'tickr_landing_resized.png',
+	  alt: 'screenshot',
+	  name: 'Tickr',
+	  githubLink: 'https://github.com/Truong-Julie/TickrTaker',
+	  description: 'Price optimized auction marketplace for time-sensitive items',
+	  techStack: '*React, Node, Express, PostgreSQL, Sequelize',
+	  fontAwesome: 'fa fa-github'
+	}, {
+	  image: 'bookmarkMyFood_createAccount_resized.png',
 	  alt: 'screenshot',
 	  name: 'Bookmark My Food',
 	  githubLink: 'https://github.com/Truong-Julie/Bookmark-My-Food',
 	  description: 'Bookmarking platform to save and organize your must try restaurants',
-	  techStack: '<insert tech stack>',
+	  techStack: '*Angular, Node, Express, SQLite, Sequelize',
 	  fontAwesome: 'fa fa-github'
 	}, {
-	  image: 'bookmarkMyFood_createAccount_Resized.png',
-	  alt: 'screenshot',
-	  name: 'Tickr',
-	  githubLink: 'https://github.com/Truong-Julie/Bookmark-My-Food',
-	  description: 'Bookmarking platform to save and organize your must try restaurants',
-	  techStack: '<insert tech stack>',
-	  fontAwesome: 'fa fa-github'
-	}, {
-	  image: 'bookmarkMyFood_createAccount_Resized.png',
+	  image: 'newJuice_homepage_resized.png',
 	  alt: 'screenshot',
 	  name: 'News Juice',
-	  githubLink: 'https://github.com/Truong-Julie/Bookmark-My-Food',
-	  description: 'Bookmarking platform to save and organize your must try restaurants',
-	  techStack: '<insert tech stack>',
-	  fontAwesome: 'fa fa-github'
-	}, {
-	  image: 'bookmarkMyFood_createAccount_Resized.png',
-	  alt: 'screenshot',
-	  name: 'Lensity',
-	  githubLink: 'https://github.com/Truong-Julie/Bookmark-My-Food',
-	  description: 'Bookmarking platform to save and organize your must try restaurants',
-	  techStack: '<insert tech stack>',
+	  githubLink: 'https://github.com/Truong-Julie/VoraciousScroll',
+	  description: 'Trending news analysis and aggregator platform ',
+	  techStack: '*Angular, Node, Express, MongoDB, Mongoose',
 	  fontAwesome: 'fa fa-github'
 	}];
 
 	var dummyBanner = {
-	  image: 'portfolio_1.JPG',
+	  image: 'portfolio_2.JPG',
 	  header: 'Portfolio',
 	  tagline: 'Take a look at what I\'ve built',
 	  alt: 'Circular Saw'
@@ -28084,14 +28093,14 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	var dummyBanner = {
-	  image: 'Home_Edited.JPG',
-	  header: 'Julie Truong',
-	  tagline: 'The chef, the builder, and software engineer',
+	  image: 'about_me_2.JPG',
+	  header: 'About Me',
+	  tagline: 'A little about my journey...',
 	  alt: 'Zion National Park'
 	};
 
 	var summary = {
-	  summary: ['I\'m a bay area native and have always lived in the bay. \nI Started my career as an revenue operations specialist at Yelp. During my time there I noticed there were several manual processes and I thought to myself, couldn\'t this be automated?', '\t After developing my first Python scripts, I automated a full day\'s working into only a few short hours. This experience made me feel so empowered, I knew I needed to keep building.', '\t Most recently, I created a photo sharing application, where I architected the Node.js and Express RESTful API on a PostgreSQL database. I also developed a Dockerized and scalable microservice which captured the Clarify API to scrape data user photos uploads and to store them on an AWS S3 file server. In addition, I am also a strong team player assisting our front-end engineer with code reviews and debugging.', '\t My passion is contributing to a code base, across spanning all layers of the stack. I feel the most accomplishment when I can move seamlessly between multiple parts of the stack and contribute clean and modular code. I recently']
+	  summary: ['I\'m a native of the lovely bay area. \nI started my career as a revenue operations specialist at Yelp. During my time there, I noticed there were several manual processes that I thought could be automated.', '\t After developing my first Python scripts, I automated a full day\'s working into only a few short hours. This experience made me feel so empowered, I knew I needed to keep building.', '\t Most recently, I created a machine learning photo sharing application, where I architected the Node.js and Express RESTful API on a PostgreSQL database. I also developed a Dockerized and scalable microservice which captured the Clarify API to scrape data user photos uploads and to store them on an AWS S3 file server. Most recently, I\'ve built this website using React.', '\t My passion is contributing to a code base, across spanning all layers of the stack. I feel the most accomplishment when I can move seamlessly between multiple parts of the stack and contribute clean and modular code.', 'When I\'m not coding, I love spending my time cooking, playing basketball, building wood furniture, learning the guitar and doing outdoorsy things like camping or biking. I look forward to getting to know you too.']
 	};
 
 	var AboutMe = function AboutMe(props) {
@@ -28104,14 +28113,6 @@
 	};
 
 	exports.default = AboutMe;
-	/*
-
-	I'm a bay area native 
-	Started my career as an revenue operations specialist at Yelp. During my time there I noticed there were several manual processes and I thought to myself, couldn't this be automated?
-
-	I've always been curious about building software which make people's lives easier.
-
-	*/
 
 /***/ },
 /* 259 */
@@ -28191,7 +28192,7 @@
 	var dummyBanner = {
 	  image: 'water_hike_3.JPG',
 	  header: 'Contact Me',
-	  tagline: 'If you need to ring me',
+	  tagline: '',
 	  alt: 'Zion National Park'
 	};
 

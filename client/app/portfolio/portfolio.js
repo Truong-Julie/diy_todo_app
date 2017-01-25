@@ -33,45 +33,45 @@ import ProjectEntry from './projectEntry'
 
 let projects = [
   {
-    image: 'bookmarkMyFood_createAccount_Resized.png',
+    image: 'lensity_home_page_resized.png',
+    alt: 'screenshot',
+    name: 'Lensity',
+    githubLink: 'https://github.com/preposterous-kumquat',
+    description: 'Photo sharing app utilizing machine learning',
+    techStack: '*React, React-Router, Redux, Webpack, Node, Express, Sequelize, PostgreSQL, Redis, Python, Docker, AWS-S3, AWS-EC2',
+    fontAwesome: 'fa fa-github'
+  },   
+  {
+    image: 'tickr_landing_resized.png',
+    alt: 'screenshot',
+    name: 'Tickr',
+    githubLink: 'https://github.com/Truong-Julie/TickrTaker',
+    description: 'Price optimized auction marketplace for time-sensitive items',
+    techStack: '*React, Node, Express, PostgreSQL, Sequelize',
+    fontAwesome: 'fa fa-github'
+  },
+  {
+    image: 'bookmarkMyFood_createAccount_resized.png',
     alt: 'screenshot',
     name: 'Bookmark My Food',
     githubLink: 'https://github.com/Truong-Julie/Bookmark-My-Food',
     description: 'Bookmarking platform to save and organize your must try restaurants',
-    techStack: '<insert tech stack>',
+    techStack: '*Angular, Node, Express, SQLite, Sequelize',
     fontAwesome: 'fa fa-github'
   },
   {
-    image: 'bookmarkMyFood_createAccount_Resized.png',
-    alt: 'screenshot',
-    name: 'Tickr',
-    githubLink: 'https://github.com/Truong-Julie/Bookmark-My-Food',
-    description: 'Bookmarking platform to save and organize your must try restaurants',
-    techStack: '<insert tech stack>',
-    fontAwesome: 'fa fa-github'
-  },
-  {
-    image: 'bookmarkMyFood_createAccount_Resized.png',
+    image: 'newJuice_homepage_resized.png',
     alt: 'screenshot',
     name: 'News Juice',
-    githubLink: 'https://github.com/Truong-Julie/Bookmark-My-Food',
-    description: 'Bookmarking platform to save and organize your must try restaurants',
-    techStack: '<insert tech stack>',
+    githubLink: 'https://github.com/Truong-Julie/VoraciousScroll',
+    description: 'Trending news analysis and aggregator platform ',
+    techStack: '*Angular, Node, Express, MongoDB, Mongoose',
     fontAwesome: 'fa fa-github'
-  },
-  {
-    image: 'bookmarkMyFood_createAccount_Resized.png',
-    alt: 'screenshot',
-    name: 'Lensity',
-    githubLink: 'https://github.com/Truong-Julie/Bookmark-My-Food',
-    description: 'Bookmarking platform to save and organize your must try restaurants',
-    techStack: '<insert tech stack>',
-    fontAwesome: 'fa fa-github'
-  }   
+  }
 ]
 
 let dummyBanner = {
-  image: 'portfolio_1.JPG',
+  image: 'portfolio_2.JPG',
   header: 'Portfolio',
   tagline: 'Take a look at what I\'ve built',
   alt: 'Circular Saw'
