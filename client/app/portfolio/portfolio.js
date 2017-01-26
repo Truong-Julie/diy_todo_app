@@ -1,35 +1,6 @@
 import React from 'react'
 import Banner from '../banner'
 import ProjectEntry from './projectEntry'
-// import ProjectCarousel from './projectCarousel'
-
-// let projectProps = { 
-//   name: 'Bookmark My Food',
-//   description: 'Bookmarking platform to save and organize your must try restaurants',
-//   techStack: '<fill here>',
-//   githubLink: 'https://github.com/Truong-Julie/Bookmark-My-Food',
-//   primaryImg: { 
-//     name: 'bookmarkMyFood_landing',
-//     filePath: 'bookmarkMyFood_landing.png'
-//   },
-//   screenshots: [
-//     { name: 'bookmarkMyFood_createAccount',
-//       filePath: 'bookmarkMyFood_createAccount.png'
-//     },
-//     { name: 'bookmarkMyFood_login',
-//       filePath: 'bookmarkMyFood_login.png'
-//     },
-//     { name: 'bookmarkMyFood_landing',
-//       filePath: 'bookmarkMyFood_landing.png'
-//     },
-//     { name: 'bookmarkMyFood_search',
-//       filePath: 'bookmarkMyFood_Search.png'
-//     },
-//     { name: 'bookmarkMyFood_bookmarked',
-//       filePath: 'bookmarkMyFood_bookmarked.png'
-//     }
-//   ] 
-// }
 
 let projects = [
   {
@@ -51,7 +22,7 @@ let projects = [
     fontAwesome: 'fa fa-github'
   },
   {
-    image: 'bookmarkMyFood_createAccount_resized.png',
+    image: 'bookmarkMyFood_bookmarked_resized.png',
     alt: 'screenshot',
     name: 'Bookmark My Food',
     githubLink: 'https://github.com/Truong-Julie/Bookmark-My-Food',

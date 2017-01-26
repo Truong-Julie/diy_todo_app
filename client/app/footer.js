@@ -7,7 +7,7 @@ const Footer = (props) => {
         {props.contacts.map((contact, i) => (
           <a className='footer-link' href={contact.url} key={i} >
             <i className={contact.fontAwesome} aria-hidden='true' />
-          </a>  
+          </a>
         ))}
       </div>
       <div className='copyright'>&copy; Julie Truong 2017</div>
@@ -21,6 +21,3 @@ Footer.propTypes = {
   url: React.PropTypes.string,
   fontAwesome: React.PropTypes.string
 }
-
-// contact me => mailto
-// links to github, angelslist and linkedin

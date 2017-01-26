@@ -27531,9 +27531,6 @@
 	  fontAwesome: _react2.default.PropTypes.string
 	};
 
-	// contact me => mailto
-	// links to github, angelslist and linkedin
-
 /***/ },
 /* 251 */
 /***/ function(module, exports, __webpack_require__) {
@@ -27905,36 +27902,6 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	// import ProjectCarousel from './projectCarousel'
-
-	// let projectProps = { 
-	//   name: 'Bookmark My Food',
-	//   description: 'Bookmarking platform to save and organize your must try restaurants',
-	//   techStack: '<fill here>',
-	//   githubLink: 'https://github.com/Truong-Julie/Bookmark-My-Food',
-	//   primaryImg: { 
-	//     name: 'bookmarkMyFood_landing',
-	//     filePath: 'bookmarkMyFood_landing.png'
-	//   },
-	//   screenshots: [
-	//     { name: 'bookmarkMyFood_createAccount',
-	//       filePath: 'bookmarkMyFood_createAccount.png'
-	//     },
-	//     { name: 'bookmarkMyFood_login',
-	//       filePath: 'bookmarkMyFood_login.png'
-	//     },
-	//     { name: 'bookmarkMyFood_landing',
-	//       filePath: 'bookmarkMyFood_landing.png'
-	//     },
-	//     { name: 'bookmarkMyFood_search',
-	//       filePath: 'bookmarkMyFood_Search.png'
-	//     },
-	//     { name: 'bookmarkMyFood_bookmarked',
-	//       filePath: 'bookmarkMyFood_bookmarked.png'
-	//     }
-	//   ] 
-	// }
-
 	var projects = [{
 	  image: 'lensity_home_page_resized.png',
 	  alt: 'screenshot',
@@ -27952,7 +27919,7 @@
 	  techStack: '*React, Node, Express, PostgreSQL, Sequelize',
 	  fontAwesome: 'fa fa-github'
 	}, {
-	  image: 'bookmarkMyFood_createAccount_resized.png',
+	  image: 'bookmarkMyFood_bookmarked_resized.png',
 	  alt: 'screenshot',
 	  name: 'Bookmark My Food',
 	  githubLink: 'https://github.com/Truong-Julie/Bookmark-My-Food',
