@@ -1,10 +1,10 @@
 {
-  "name": "diy_project_app",
+  "name": "truong-julie",
   "version": "1.0.0",
-  "description": "",
+  "description": "personal website",
   "main": "index.js",
   "scripts": {
-    "start": "forever start ./server/index.js",
+    "start": "nodemon ./server/index.js",
     "dev": "webpack-dev-server & open http://localhost:3333",
     "build": "webpack -w",
     "test": "mocha ./test/setup.js ./test/tests.js"
