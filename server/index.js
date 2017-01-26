@@ -1,7 +1,7 @@
 const express = require('express')
 const app = express()
-if (process.env.PROD.PORT) {
-  const port = process.env.PROD.PORT
+if (process.env.NODE_ENV === 'production') {
+  const port = 80
 } else {
   const port = 3000
 }
