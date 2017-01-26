@@ -28096,11 +28096,7 @@
 	  image: 'about_me_2.JPG',
 	  header: 'About Me',
 	  tagline: 'A little about my journey...',
-	  alt: 'Zion National Park'
-	};
-
-	var summary = {
-	  summary: ['I\'m a native of the lovely bay area. \nI started my career as a revenue operations specialist at Yelp. During my time there, I noticed there were several manual processes that I thought could be automated.', '\t After developing my first Python scripts, I automated a full day\'s working into only a few short hours. This experience made me feel so empowered, I knew I needed to keep building.', '\t Most recently, I created a machine learning photo sharing application, where I architected the Node.js and Express RESTful API on a PostgreSQL database. I also developed a Dockerized and scalable microservice which captured the Clarify API to scrape data user photos uploads and to store them on an AWS S3 file server. Most recently, I\'ve built this website using React.', '\t My passion is contributing to a code base, across spanning all layers of the stack. I feel the most accomplishment when I can move seamlessly between multiple parts of the stack and contribute clean and modular code.', 'When I\'m not coding, I love spending my time cooking, playing basketball, building wood furniture, learning the guitar and doing outdoorsy things like camping or biking. I look forward to getting to know you too.']
+	  alt: 'Camel Beach'
 	};
 
 	var AboutMe = function AboutMe(props) {
@@ -28108,7 +28104,7 @@
 	    'div',
 	    { className: 'aboutMe-container' },
 	    _react2.default.createElement(_banner2.default, dummyBanner),
-	    _react2.default.createElement(_aboutMeContent2.default, summary)
+	    _react2.default.createElement(_aboutMeContent2.default, null)
 	  );
 	};
 
@@ -28130,7 +28126,7 @@
 
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-	var AboutMeContent = function AboutMeContent(props) {
+	var AboutMeContent = function AboutMeContent() {
 	  return _react2.default.createElement(
 	    'div',
 	    { className: 'about-me-content-container' },
@@ -28140,30 +28136,62 @@
 	      _react2.default.createElement('img', { className: 'img-circle', src: '../assets/Profile.jpg', alt: 'profile photo' })
 	    ),
 	    _react2.default.createElement(
-	      'h3',
-	      { className: 'about-me-name' },
-	      'Julie Truong'
-	    ),
-	    _react2.default.createElement(
 	      'div',
 	      { className: 'about-me-summary' },
-	      props.summary.map(function (paragraph) {
-	        return _react2.default.createElement(
-	          'p',
+	      _react2.default.createElement(
+	        'h3',
+	        { className: 'about-me-name' },
+	        'Julie Truong'
+	      ),
+	      _react2.default.createElement(
+	        'p',
+	        null,
+	        'I\'m a native of the lovely bay area. I started my career as a revenue operations specialist at Yelp. During my time there, I noticed there were several manual processes that I thought could be automated.'
+	      ),
+	      _react2.default.createElement(
+	        'p',
+	        null,
+	        'After developing my first Python scripts, I automated a full day\'s working into only a few short hours. This experience made me feel so empowered, I knew I needed to keep building.'
+	      ),
+	      _react2.default.createElement(
+	        'p',
+	        null,
+	        'Most recently, I created a machine learning photo sharing application, where I:'
+	      ),
+	      _react2.default.createElement(
+	        'ul',
+	        null,
+	        _react2.default.createElement(
+	          'li',
 	          null,
-	          paragraph
-	        );
-	      })
+	          'Architected the Node.js and Express RESTful API on a PostgreSQL database.'
+	        ),
+	        _react2.default.createElement(
+	          'li',
+	          null,
+	          'Developed a Dockerized and scalable microservice which captured the Clarify API to scrape data user photos uploads and to store them on an AWS S3 file server.'
+	        ),
+	        _react2.default.createElement(
+	          'li',
+	          null,
+	          'Most recently, I\'ve built this website using React.'
+	        )
+	      ),
+	      _react2.default.createElement(
+	        'p',
+	        null,
+	        'My passion is contributing to a code base, across spanning all layers of the stack. I feel the most accomplishment when I can move seamlessly between multiple parts of the stack and contribute clean and modular code.'
+	      ),
+	      _react2.default.createElement(
+	        'p',
+	        null,
+	        'When I\'m not coding, I love spending my time cooking, playing basketball, building wood furniture, learning the guitar and doing outdoorsy things like camping or biking. I look forward to getting to know you too.'
+	      )
 	    )
 	  );
 	};
 
 	exports.default = AboutMeContent;
-
-
-	AboutMeContent.propTypes = {
-	  summary: _react2.default.PropTypes.string
-	};
 
 /***/ },
 /* 260 */
@@ -28196,7 +28224,7 @@
 	  alt: 'Zion National Park'
 	};
 
-	var summary = 'Think I would be a good team member? Contact me at julie.truong.lieu@gmail';
+	var summary = 'Think I would be a good team member? Contact me at julie.truong.lieu@gmail.com';
 
 	var ContactMe = function ContactMe(props) {
 	  return _react2.default.createElement(
