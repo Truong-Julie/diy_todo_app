@@ -34,7 +34,7 @@
 /******/ 	__webpack_require__.c = installedModules;
 
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "";
+/******/ 	__webpack_require__.p = "./client/bundle/";
 
 /******/ 	// Load entry module and return exports
 /******/ 	return __webpack_require__(0);
@@ -27387,7 +27387,8 @@
 	var fontAwesome = {
 	  github: 'fa fa-github',
 	  linkedIn: 'fa fa-linkedin-square',
-	  angelList: 'fa fa-angellist'
+	  angelList: 'fa fa-angellist',
+	  email: 'fa fa-envelope'
 	};
 
 	var personalLinks = {
@@ -27398,6 +27399,9 @@
 	    fontAwesome: fontAwesome.linkedIn }, { tag: 'angelList',
 	    url: 'https://angel.co/truong-julie',
 	    fontAwesome: fontAwesome.angelList
+	  }, { tag: 'email',
+	    url: 'mailto:julie.truong.lieu@gmail.com?Subject=Hey%20Julie!%20Saw%20your%20website,%20let\'s%20chat!',
+	    fontAwesome: fontAwesome.email
 	  }]
 	};
 
@@ -27451,13 +27455,13 @@
 	    'nav',
 	    { className: 'nav-bar-container' },
 	    _react2.default.createElement(
-	      _reactRouter.Link,
-	      { className: 'logo', to: '/' },
-	      _react2.default.createElement('img', { src: '../assets/Logo.png', alt: 'Julie Truong' })
-	    ),
-	    _react2.default.createElement(
 	      'div',
 	      { className: 'nav-links' },
+	      _react2.default.createElement(
+	        _reactRouter.Link,
+	        { className: 'logo nav-link', to: '/' },
+	        'Julie Truong'
+	      ),
 	      _react2.default.createElement(
 	        _reactRouter.Link,
 	        { className: 'nav-link', to: '/aboutMe' },
@@ -27729,7 +27733,8 @@
 	var fontAwesome = {
 	  github: 'fa fa-github',
 	  linkedIn: 'fa fa-linkedin-square',
-	  angelList: 'fa fa-angellist'
+	  angelList: 'fa fa-angellist',
+	  email: 'fa fa-envelope'
 	};
 
 	var personalLinks = {
@@ -28189,7 +28194,7 @@
 	  alt: 'Zion National Park'
 	};
 
-	var summary = 'Think I would be a good team member? Contact me at julie.truong.lieu@gmail.com';
+	var summary = ['Think I would be a good team member?', 'Contact me at Julie.Truong.Lieu@gmail.com'];
 
 	var ContactMe = function ContactMe(props) {
 	  return _react2.default.createElement(
@@ -28222,11 +28227,13 @@
 	  return _react2.default.createElement(
 	    'div',
 	    { className: 'contact-me-content-container' },
-	    _react2.default.createElement(
-	      'p',
-	      null,
-	      props.summary
-	    )
+	    props.summary.map(function (line, i) {
+	      return _react2.default.createElement(
+	        'p',
+	        null,
+	        line
+	      );
+	    })
 	  );
 	};
 	exports.default = ContactMeContent;

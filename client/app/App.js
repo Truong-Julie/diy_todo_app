@@ -5,7 +5,8 @@ import Footer from './footer'
 const fontAwesome = {
   github: 'fa fa-github',
   linkedIn: 'fa fa-linkedin-square',
-  angelList: 'fa fa-angellist'
+  angelList: 'fa fa-angellist',
+  email: 'fa fa-envelope'
 }
 
 const personalLinks = {
@@ -19,6 +20,10 @@ const personalLinks = {
     {tag: 'angelList',
       url: 'https://angel.co/truong-julie',
       fontAwesome: fontAwesome.angelList
+    },
+    {tag: 'email',
+      url: 'mailto:julie.truong.lieu@gmail.com?Subject=Hey%20Julie!%20Saw%20your%20website,%20let\'s%20chat!',
+      fontAwesome: fontAwesome.email
     }
   ]
 }

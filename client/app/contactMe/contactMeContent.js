@@ -2,7 +2,7 @@ import React from 'react'
 
 const ContactMeContent = (props) => (
   <div className='contact-me-content-container'>
-    <p>{props.summary}</p>
+    {props.summary.map((line, i) => <p>{line}</p>)}
   </div>
 )
 export default ContactMeContent

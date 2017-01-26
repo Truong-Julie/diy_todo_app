@@ -9,7 +9,7 @@ let dummyBanner = {
   alt: 'Zion National Park'
 }
 
-let summary = 'Think I would be a good team member? Contact me at julie.truong.lieu@gmail.com'
+let summary = ['Think I would be a good team member?', 'Contact me at Julie.Truong.Lieu@gmail.com']
 
 const ContactMe = (props) => (
   <div className='ContactMe-container'>

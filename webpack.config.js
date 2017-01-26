@@ -7,6 +7,7 @@ module.exports = {
   output: {
     // Name of the file exported
     path: path.join(__dirname, '/client/bundle'),
+    publicPath: './client/bundle/',
     filename: 'index.js'
   },
   resolve: {

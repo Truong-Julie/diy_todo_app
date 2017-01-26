@@ -7,3 +7,5 @@ data.js
 .DS_Store
 
 test/npm-debug.log
+
+npm-debug.log
