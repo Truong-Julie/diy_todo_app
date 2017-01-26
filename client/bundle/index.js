@@ -27563,7 +27563,7 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	var dummyBanner = {
-	  image: 'Home_Edited.JPG',
+	  image: 'Home_Edited.jpg',
 	  header: 'A Software Engineer',
 	  tagline: 'Building automation',
 	  alt: 'Zion National Park'
@@ -27878,8 +27878,6 @@
 	  header: _react2.default.PropTypes.string,
 	  alt: _react2.default.PropTypes.string
 	};
-	// add button
-	// 50kB
 
 /***/ },
 /* 256 */
@@ -28093,7 +28091,7 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	var dummyBanner = {
-	  image: 'about_me_2.JPG',
+	  image: 'about_me_2.jpg',
 	  header: 'About Me',
 	  tagline: 'A little about my journey...',
 	  alt: 'Camel Beach'
@@ -28218,7 +28216,7 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	var dummyBanner = {
-	  image: 'water_hike_3.JPG',
+	  image: 'water_hike_3.jpg',
 	  header: 'Contact Me',
 	  tagline: '',
 	  alt: 'Zion National Park'
