@@ -17,5 +17,3 @@ Banner.propTypes = {
   header: React.PropTypes.string,
   alt: React.PropTypes.string
 }
-// add button
-// 50kB
