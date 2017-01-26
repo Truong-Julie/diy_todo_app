@@ -71,7 +71,7 @@ let projects = [
 ]
 
 let dummyBanner = {
-  image: 'portfolio_2.JPG',
+  image: 'portfolio_2.jpg',
   header: 'Portfolio',
   tagline: 'Take a look at what I\'ve built',
   alt: 'Circular Saw'
