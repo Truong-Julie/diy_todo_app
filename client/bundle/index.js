@@ -27909,7 +27909,7 @@
 
 	var projects = [{
 	  image: 'lensity_home_page_resized_150kb.jpg',
-	  alt: 'screenshot',
+	  alt: 'Lensity Landing Page',
 	  name: 'Lensity',
 	  githubLink: 'https://github.com/preposterous-kumquat',
 	  description: 'Photo sharing app utilizing machine learning',
@@ -27925,7 +27925,7 @@
 	  fontAwesome: 'fa fa-github'
 	}, {
 	  image: 'bookmarkMyFood_bookmarked_resized_125kb.jpg',
-	  alt: 'screenshot',
+	  alt: 'Bookmark My Food Landing Page',
 	  name: 'Bookmark My Food',
 	  githubLink: 'https://github.com/Truong-Julie/Bookmark-My-Food',
 	  description: 'Bookmarking platform to save and organize your must try restaurants',
@@ -27933,7 +27933,7 @@
 	  fontAwesome: 'fa fa-github'
 	}, {
 	  image: 'newJuice_homepage_resized_100kb.jpg',
-	  alt: 'screenshot',
+	  alt: 'News Juice Landing Page',
 	  name: 'News Juice',
 	  githubLink: 'https://github.com/Truong-Julie/VoraciousScroll',
 	  description: 'Trending news analysis and aggregator platform ',
