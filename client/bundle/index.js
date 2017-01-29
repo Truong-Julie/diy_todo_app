@@ -27408,10 +27408,10 @@
 	var App = function (_React$Component) {
 	  _inherits(App, _React$Component);
 
-	  function App(props) {
+	  function App() {
 	    _classCallCheck(this, App);
 
-	    return _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).call(this, props));
+	    return _possibleConstructorReturn(this, (App.__proto__ || Object.getPrototypeOf(App)).apply(this, arguments));
 	  }
 
 	  _createClass(App, [{
@@ -27566,7 +27566,7 @@
 	var dummyBanner = {
 	  image: 'Home_Edited.jpg',
 	  header: 'A Software Engineer',
-	  tagline: 'Building automation',
+	  tagline: 'Building applications',
 	  alt: 'Zion National Park'
 	};
 
@@ -28102,16 +28102,16 @@
 	    { className: 'about-me-content-container' },
 	    _react2.default.createElement(
 	      'div',
-	      { className: 'about-me-image' },
-	      _react2.default.createElement('img', { className: 'img-circle', src: '../assets/Profile.jpg', alt: 'profile photo' })
-	    ),
-	    _react2.default.createElement(
-	      'div',
 	      { className: 'about-me-summary' },
 	      _react2.default.createElement(
 	        'h3',
 	        { className: 'about-me-name' },
 	        'Julie Truong'
+	      ),
+	      _react2.default.createElement(
+	        'div',
+	        { className: 'about-me-image' },
+	        _react2.default.createElement('img', { className: 'img-circle', src: '../assets/Profile.jpg', alt: 'profile photo' })
 	      ),
 	      _react2.default.createElement(
 	        'p',
@@ -28121,7 +28121,7 @@
 	      _react2.default.createElement(
 	        'p',
 	        null,
-	        'After developing my first Python scripts, I automated a full day\'s working into only a few short hours. This experience made me feel so empowered, I knew I needed to keep building.'
+	        'After developing my first Python scripts, where I automated a full day\'s worth of work into only a few short hours. I knew I needed to keep building. That experience not only made me feel more empowered but it sparked a fire in me to keep building more applications.'
 	      ),
 	      _react2.default.createElement(
 	        'p',
@@ -28134,23 +28134,23 @@
 	        _react2.default.createElement(
 	          'li',
 	          null,
-	          'Architected the Node.js and Express RESTful API on a PostgreSQL database.'
+	          'Architected the Node.js and Express RESTful API on a PostgreSQL database'
 	        ),
 	        _react2.default.createElement(
 	          'li',
 	          null,
-	          'Developed a Dockerized and scalable microservice which captured the Clarify API to scrape data user photos uploads and to store them on an AWS S3 file server.'
+	          'Developed a Dockerized and scalable microservice which captured the Clarify API to scrape data from user uploaded photos'
 	        ),
 	        _react2.default.createElement(
 	          'li',
 	          null,
-	          'Most recently, I\'ve built this website using React.'
+	          'Lastly, I\'ve built this website using React'
 	        )
 	      ),
 	      _react2.default.createElement(
 	        'p',
 	        null,
-	        'My passion is contributing to a code base, across spanning all layers of the stack. I feel the most accomplishment when I can move seamlessly between multiple parts of the stack and contribute clean and modular code.'
+	        'My goal to contribute clean and modular code to a large code base, and always leaving it better than when I first found it. Accomplishment to me, is when others can benefit from my contributions, from my fellow engineers to the end user.'
 	      ),
 	      _react2.default.createElement(
 	        'p',
@@ -28191,10 +28191,10 @@
 	  image: 'water_hike_3.jpg',
 	  header: 'Contact Me',
 	  tagline: '',
-	  alt: 'Zion National Park'
+	  alt: 'Limekin'
 	};
 
-	var summary = ['Think I would be a good team member?', 'Contact me at Julie.Truong.Lieu@gmail.com'];
+	var summary = ['Think I would be a good team member?', 'Contact me at Julie.Truong.Lieu@gmail.com', 'Or click on one of the links below!'];
 
 	var ContactMe = function ContactMe(props) {
 	  return _react2.default.createElement(

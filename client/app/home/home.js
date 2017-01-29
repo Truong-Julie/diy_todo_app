@@ -6,7 +6,7 @@ import data from '../../data/data'
 let dummyBanner = {
   image: 'Home_Edited.jpg',
   header: 'A Software Engineer',
-  tagline: 'Building automation',
+  tagline: 'Building applications',
   alt: 'Zion National Park'
 }
 

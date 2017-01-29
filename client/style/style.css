@@ -71,7 +71,6 @@ html, body {
 }
 
 .banner-container {
-  position: relative;
   font-size: 2rem;
   color: white;
   text-align: center;
@@ -274,9 +273,17 @@ i.fa {
   box-shadow: 0 0 0 2px black;
 }
 
+.about-me-summary h3 {
+  text-align: center;
+}
+
 .about-me-summary p {
   text-indent: 3em;
   word-wrap: break-word;
+}
+
+.about-me-summary ul {
+  padding-left: 5vw;
 }
 
 .contact-me-content-container {
@@ -284,5 +291,5 @@ i.fa {
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  padding: 0 0 20vh;
+  padding: 0 0 10vh;
 }

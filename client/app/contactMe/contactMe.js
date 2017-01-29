@@ -6,10 +6,10 @@ let dummyBanner = {
   image: 'water_hike_3.jpg',
   header: 'Contact Me',
   tagline: '',
-  alt: 'Zion National Park'
+  alt: 'Limekin'
 }
 
-let summary = ['Think I would be a good team member?', 'Contact me at Julie.Truong.Lieu@gmail.com']
+let summary = ['Think I would be a good team member?', 'Contact me at Julie.Truong.Lieu@gmail.com', 'Or click on one of the links below!']
 
 const ContactMe = (props) => (
   <div className='ContactMe-container'>
