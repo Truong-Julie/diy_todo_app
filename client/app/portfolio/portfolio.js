@@ -4,7 +4,7 @@ import ProjectEntry from './projectEntry'
 
 let projects = [
   {
-    image: 'lensity_home_page_resized.png',
+    image: 'lensity_home_page_resized_150kb.jpg',
     alt: 'screenshot',
     name: 'Lensity',
     githubLink: 'https://github.com/preposterous-kumquat',
@@ -13,8 +13,8 @@ let projects = [
     fontAwesome: 'fa fa-github'
   },   
   {
-    image: 'tickr_landing_resized.png',
-    alt: 'screenshot',
+    image: 'tickr_landing_resized_60kb.jpg',
+    alt: 'Tickr Landing Page',
     name: 'Tickr',
     githubLink: 'https://github.com/Truong-Julie/TickrTaker',
     description: 'Price optimized auction marketplace for time-sensitive items',
@@ -22,7 +22,7 @@ let projects = [
     fontAwesome: 'fa fa-github'
   },
   {
-    image: 'bookmarkMyFood_bookmarked_resized.png',
+    image: 'bookmarkMyFood_bookmarked_resized_125kb.jpg',
     alt: 'screenshot',
     name: 'Bookmark My Food',
     githubLink: 'https://github.com/Truong-Julie/Bookmark-My-Food',
@@ -31,7 +31,7 @@ let projects = [
     fontAwesome: 'fa fa-github'
   },
   {
-    image: 'newJuice_homepage_resized.png',
+    image: 'newJuice_homepage_resized_100kb.jpg',
     alt: 'screenshot',
     name: 'News Juice',
     githubLink: 'https://github.com/Truong-Julie/VoraciousScroll',
@@ -42,7 +42,7 @@ let projects = [
 ]
 
 let dummyBanner = {
-  image: 'portfolio_2.jpg',
+  image: 'portfolio_195kb.jpg',
   header: 'Portfolio',
   tagline: 'Take a look at what I\'ve built',
   alt: 'Circular Saw'

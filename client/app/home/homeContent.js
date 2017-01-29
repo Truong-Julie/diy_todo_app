@@ -15,7 +15,7 @@ let aboutMe = { title: 'About Me',
 }
 
 let portfolio = { title: 'Portfolio',
-  image: '../assets/lensity_square_2.png',
+  image: '../assets/lensity_square_150kb.jpg',
   alt: 'alt string',
   summary: 'Creatively buliding blocks...',
   link: 'portfolio',

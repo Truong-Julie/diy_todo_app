@@ -3,7 +3,7 @@ import Banner from '../banner'
 import ContactMeContent from './contactMeContent'
 
 let dummyBanner = {
-  image: 'water_hike_3.jpg',
+  image: 'water_hike_200kb.jpg',
   header: 'Contact Me',
   tagline: '',
   alt: 'Limekin'

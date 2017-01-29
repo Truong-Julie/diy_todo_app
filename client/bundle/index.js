@@ -27564,7 +27564,7 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	var dummyBanner = {
-	  image: 'Home_Edited.jpg',
+	  image: 'Home_Edited_150kb.jpg',
 	  header: 'A Software Engineer',
 	  tagline: 'Building applications',
 	  alt: 'Zion National Park'
@@ -27622,7 +27622,7 @@
 	};
 
 	var portfolio = { title: 'Portfolio',
-	  image: '../assets/lensity_square_2.png',
+	  image: '../assets/lensity_square_150kb.jpg',
 	  alt: 'alt string',
 	  summary: 'Creatively buliding blocks...',
 	  link: 'portfolio',
@@ -27908,7 +27908,7 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	var projects = [{
-	  image: 'lensity_home_page_resized.png',
+	  image: 'lensity_home_page_resized_150kb.jpg',
 	  alt: 'screenshot',
 	  name: 'Lensity',
 	  githubLink: 'https://github.com/preposterous-kumquat',
@@ -27916,15 +27916,15 @@
 	  techStack: '*React, React-Router, Redux, Webpack, Node, Express, Sequelize, PostgreSQL, Redis, Python, Docker, AWS-S3, AWS-EC2',
 	  fontAwesome: 'fa fa-github'
 	}, {
-	  image: 'tickr_landing_resized.png',
-	  alt: 'screenshot',
+	  image: 'tickr_landing_resized_60kb.jpg',
+	  alt: 'Tickr Landing Page',
 	  name: 'Tickr',
 	  githubLink: 'https://github.com/Truong-Julie/TickrTaker',
 	  description: 'Price optimized auction marketplace for time-sensitive items',
 	  techStack: '*React, Node, Express, PostgreSQL, Sequelize',
 	  fontAwesome: 'fa fa-github'
 	}, {
-	  image: 'bookmarkMyFood_bookmarked_resized.png',
+	  image: 'bookmarkMyFood_bookmarked_resized_125kb.jpg',
 	  alt: 'screenshot',
 	  name: 'Bookmark My Food',
 	  githubLink: 'https://github.com/Truong-Julie/Bookmark-My-Food',
@@ -27932,7 +27932,7 @@
 	  techStack: '*Angular, Node, Express, SQLite, Sequelize',
 	  fontAwesome: 'fa fa-github'
 	}, {
-	  image: 'newJuice_homepage_resized.png',
+	  image: 'newJuice_homepage_resized_100kb.jpg',
 	  alt: 'screenshot',
 	  name: 'News Juice',
 	  githubLink: 'https://github.com/Truong-Julie/VoraciousScroll',
@@ -27942,7 +27942,7 @@
 	}];
 
 	var dummyBanner = {
-	  image: 'portfolio_2.jpg',
+	  image: 'portfolio_195kb.jpg',
 	  header: 'Portfolio',
 	  tagline: 'Take a look at what I\'ve built',
 	  alt: 'Circular Saw'
@@ -28063,7 +28063,7 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	var dummyBanner = {
-	  image: 'about_me_2.jpg',
+	  image: 'about_me_200kb.jpg',
 	  header: 'About Me',
 	  tagline: 'A little about my journey...',
 	  alt: 'Camel Beach'
@@ -28188,7 +28188,7 @@
 	function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
 	var dummyBanner = {
-	  image: 'water_hike_3.jpg',
+	  image: 'water_hike_200kb.jpg',
 	  header: 'Contact Me',
 	  tagline: '',
 	  alt: 'Limekin'
